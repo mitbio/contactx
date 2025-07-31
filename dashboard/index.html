@@ -265,7 +265,7 @@ downloadBtn.addEventListener('click' ,(e) => {
 
 function contactsGained() {
 
-    fetch(`https://contactxbackend1.onrender.com/?id=${userId}`)
+    fetch(`https://06775304-c809-46e6-a97e-d5d86bd127b5-00-eqihmu01f4th.spock.replit.dev/?id=${userId}`)
         .then(response => response.json())
         .then(data => {
             contactsGainedElement.innerText = data.contactsGained;
@@ -278,7 +278,7 @@ function contactsGained() {
 contactsGained(); // Call the function to update the element
 
 function getContacts() {
-  fetch(`https://contactxbackend1.onrender.com/vcf?id=${userId}`)
+  fetch(`https://06775304-c809-46e6-a97e-d5d86bd127b5-00-eqihmu01f4th.spock.replit.dev/vcf?id=${userId}`)
     .then(async (response) => {
       const contentType = response.headers.get("content-type");
 
