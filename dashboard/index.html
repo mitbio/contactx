@@ -236,7 +236,7 @@ usernaming.innerText =userName;
 const storedStart = localStorage.getItem("contactx_timerStart");
 const storedDuration = localStorage.getItem("contactx_timerDuration");
 
-if (!userId) {
+if (!userId ||!userName) {
    // localStorage.removeItem('userPhone'); // Clear old login
     window.location.href = '../signin'; // Redirect to signup
 }
@@ -266,7 +266,7 @@ downloadBtn.addEventListener('click' ,(e) => {
 
 function contactsGained() {
 
-    fetch(`https://06775304-c809-46e6-a97e-d5d86bd127b5-00-eqihmu01f4th.spock.replit.dev/?id=${userId}`)
+    fetch(`https://06775304-c809-46e6-a97e-d5d86bd127b5-00-eqihmu01f4th.spock.replit.dev/contactsGained?id=${userId}`)
         .then(response => response.json())
         .then(data => {
             contactsGainedElement.innerText = data.contactsGained;
@@ -407,6 +407,7 @@ async function handleDownload() {
 // Logout Function
 logoutBtn.addEventListener('click', () => {
     localStorage.removeItem('userId');
+	localStorage.removeItem('userName');
 	// 🧼 Clear timer info
 			localStorage.removeItem("contactx_timerStart");
 			localStorage.removeItem("contactx_timerDuration");
@@ -433,4 +434,5 @@ fetchContactStatus();
 </body>
 
 </html>
+
 
