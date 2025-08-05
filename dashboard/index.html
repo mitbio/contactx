@@ -214,6 +214,7 @@
 					
 	</style>
   <script >
+	  document.addEventListener('DOMContentLoaded', () => {
 // Select Elements
 const timeLeftElement = document.getElementById('time-left');
 const progressElement = document.getElementById('progress');
@@ -426,7 +427,10 @@ function isSignupExpired(lastLogin) {
 setInterval(fetchContactStatus, 1000);
 fetchContactStatus();
 */
+		  });
+
   </script>
 </body>
 
 </html>
+
