@@ -14,9 +14,20 @@
   <!-- Dashboard Section -->
   <section class="dashboard-section">
     <div class="container">
-      <h1 class="title">Welcome <span id="userName"></span> To Your Dashboard</h1>
+      <h1 class="title"style=" font-size: clamp(
+												    25px,
+												    calc(16px + (48 - 16) * ((100vw - 320px) / (1200 - 320))),
+												    30px
+												  );"
+	 >Welcome <span id="userName"></span> To Your Dashboard</h1>
 
-      <div class="grid">
+      <div class="grid"
+		  style=" font-size: clamp(
+								    12px,
+								    calc(16px + (48 - 16) * ((100vw - 320px) / (1200 - 320))),
+								    15px
+								  );"
+		  >
         <div class="card">
           <h2 class="card-title">
             <span class="icon-clock"></span>
@@ -46,25 +57,32 @@
       </div>
     </div>
   </section>
+	
+<div style=" font-size: clamp(
+    12px,
+    calc(16px + (48 - 16) * ((100vw - 320px) / (1200 - 320))),
+    15px
+ 	 );">
+	  <!-- Terms & Conditions Section -->
+	  <section class="terms-section">
+	    <div class="container">
+	      <h2 class="section-title">Terms & Conditions</h2>
+	      <p class="description">
+	        By using our service, you agree to the following <a href="../termsofservice">terms and conditions...</a>
+	        <!-- Full terms go here -->
+	      </p>
+	    </div>
+	  </section>
+	
+	  <!-- Contact Us Section -->
+	  <section class="contact-section">
+	    <div class="container">
+	      <h2 class="section-title">Contact Us</h2>
+	      <p>If you have any questions or concerns, please reach out to us on whatsapp at <a href="tel:08075228314" class="email-link">08075228314</a></p>
+	    </div>
+	  </section>
 
-  <!-- Terms & Conditions Section -->
-  <section class="terms-section">
-    <div class="container">
-      <h2 class="section-title">Terms & Conditions</h2>
-      <p class="description">
-        By using our service, you agree to the following <a href="../termsofservice">terms and conditions...</a>
-        <!-- Full terms go here -->
-      </p>
-    </div>
-  </section>
-
-  <!-- Contact Us Section -->
-  <section class="contact-section">
-    <div class="container">
-      <h2 class="section-title">Contact Us</h2>
-      <p>If you have any questions or concerns, please reach out to us on whatsapp at <a href="tel:08075228314" class="email-link">08075228314</a></p>
-    </div>
-  </section>
+</div>
 
   <!-- Footer -->
   <footer>
@@ -434,6 +452,7 @@ fetchContactStatus();
 </body>
 
 </html>
+
 
 
 
